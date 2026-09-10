@@ -963,6 +963,31 @@ function loadAccounts(){
 }
 var ACCOUNTS=loadAccounts();
 function saveAccounts(){try{localStorage.setItem(LS_PREFIX+'accounts',JSON.stringify(ACCOUNTS))}catch(e){}}
+
+// 账号名一键恢复：从 URL 哈希读取（真实昵称不写入公开代码，保护隐私）
+// 用法：网址后加 #acc=名称1|名称2|名称3 打开一次，账号名即恢复并存入本机
+(function restoreAccFromHash(){
+  try{
+    var m=location.hash.match(/acc=([^&]+)/);
+    if(!m)return;
+    var names=decodeURIComponent(m[1]).split('|').map(function(s){return s.trim()}).filter(Boolean);
+    if(!names.length)return;
+    var changed=false;
+    for(var i=0;i<names.length&&i<ACCOUNTS.length;i++){
+      var old=ACCOUNTS[i],nn=names[i];
+      if(old===nn||!nn)continue;
+      var pf=pfOf(old);
+      ACCOUNTS[i]=nn;
+      ACC_PF[nn]=pf;delete ACC_PF[old];
+      if(ui.account===old)ui.account=nn;
+      changed=true;
+    }
+    if(changed){
+      saveAccounts();saveAccPf();
+      try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}
+    }
+  }catch(e){}
+})();
 function accFilter(x){var a=mapAcc(x['账号']);if(!ui.account)return true;if(ui.account==='未分类')return !x['账号']||a==='未分类';return a===ui.account}
 function todoVisible(x){
   if(!x.topicId && !x['选题ID'])return true; // 其他事项（个人待办）不受账号筛选限制，始终显示
@@ -1014,7 +1039,7 @@ function renAccount(i){
   if(n&&n.trim()){
     var old=ACCOUNTS[i],nn=n.trim();
     ACCOUNTS[i]=nn;saveAccounts();
-    if(ACC_PF[old]!==undefined){ACC_PF[nn]=ACC_PF[old];delete ACC_PF[old];saveAccPf()}
+    ACC_PF[nn]=pfOf(old);delete ACC_PF[old];saveAccPf();
     if(ui.account===old)ui.account=nn;
     accountModal();renderAccountBar();renderAll();
   }

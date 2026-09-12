@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="W7Ue9t700h4El29rclfx4j">
-<head data-page-node-id="bYv4D8AC7gdk9LbFSvJVaO">
-<meta charset="UTF-8" data-page-node-id="K41qIoVJioF18ok0NBs63H">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" data-page-node-id="AUNNKOADF2r3Izk81K1IPa">
+<html lang="zh-CN" data-page-node-id="Mr3X5rtDGnaX0HFIeMevfV">
+<head data-page-node-id="ZxbqGxRpKIVYooHVFJLmEy">
+<meta charset="UTF-8" data-page-node-id="l3jAe7T0DIj3ohVuXwHLg1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" data-page-node-id="MCErAfbUxKAjMtnZxMuXBo">
 <title>自媒体创作台</title>
 <!-- 本工作台通过 WorkBuddy 资料库能力（library skill）搭建、存储和部署 -->
 <style>
@@ -568,6 +568,21 @@ svg{display:block;flex-shrink:0}
   .bottom-nav{display:block}
 }
 @media (max-width:600px){.insp-card{min-height:0}}
+/* 收纳筐 */
+.bk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.bk-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+.bk-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.bk-src{font-size:11.5px;font-weight:600;border-radius:6px;padding:3px 8px;border:1px solid var(--line);background:var(--bg);color:var(--sub)}
+.bk-src-topic{background:#EFF4FF;color:var(--blue);border-color:#D8E4FF}
+.bk-src-mat{background:#E7F6EF;color:var(--green);border-color:#C9ECDA}
+.bk-src-todo{background:#FFF7E6;color:#B45309;border-color:#FDE8C8}
+.bk-mini{font-size:11.5px;color:var(--sub2)}
+.bk-date{margin-left:auto;font-size:11.5px;color:var(--sub2)}
+.bk-title{font-weight:700;font-size:15px;line-height:1.5;display:flex;align-items:flex-start;gap:8px}
+.bk-sum{font-size:13px;color:var(--sub);line-height:1.6;background:var(--bg);border-radius:8px;padding:8px 10px}
+.bk-note{font-size:13px;color:var(--text);line-height:1.6;border-left:3px solid var(--brand);padding-left:10px}
+.bk-acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+@media(max-width:900px){.bk-grid{grid-template-columns:1fr}}
 </style>
 <!-- 防白屏保险：任何未捕获错误都显示可读面板+本地备份，绝不静默白屏 -->
 <script>
@@ -600,296 +615,296 @@ svg{display:block;flex-shrink:0}
 })();
 </script>
 </head>
-<body data-page-node-id="fXBEW4h4j3weamAUfWkp5Y">
-<div class="layout" data-page-node-id="ATBtFoy2ina1uFPpUZDgxa">
-  <aside class="sidebar" data-page-node-id="Vhe0oGYoHNYHsO4MVjnZf1">
-    <div class="sb-head" data-page-node-id="DgADCPtxKXQ1JopkXo0IfL">
-      <div class="sb-logo" data-page-node-id="ZqVSjXYcjzA8uePvKjbDFE"><span class="ip-logo ip-img-2" data-page-node-id="m9gtNjyPNJC7vzZTEKSZRQ"></span>创作工作台</div>
-      <div class="sb-sub" data-page-node-id="CuR1wEjOa2t2w63QnqbGyP">自媒体 · 一站式</div>
+<body data-page-node-id="XgvU3HPbBLFQZJE0lx3UAj">
+<div class="layout" data-page-node-id="D6jGQBsuIuWPembGvPRUsm">
+  <aside class="sidebar" data-page-node-id="UPvVrX4XY1NePVfD9lM4qW">
+    <div class="sb-head" data-page-node-id="iZ2Z5Q6Eo7KllewF73lGv3">
+      <div class="sb-logo" data-page-node-id="CDcwc6R1YDtSAUUaQCnCsY"><span class="ip-logo ip-img-2" data-page-node-id="SO5CLqZ83CDXQLaIFqaBgF"></span>创作工作台</div>
+      <div class="sb-sub" data-page-node-id="IZG5Yp3ryVJ4sCFI1MpMsw">自媒体 · 一站式</div>
     </div>
-    <nav class="sb-nav" id="sbNav" data-page-node-id="67DHOPv2trGBqDGuHHgAn5">
-      <div class="sb-group" data-page-node-id="Q2D4Ew8glHUa5NMjVhZZFQ">总览</div>
-      <button class="sb-item on" data-tab="dash" data-page-node-id="PKM9TnayBo5OQn54HDTKmj">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="3wXtDemjDJETS8m0CteD3t"><path d="M3 3v18h18M8 17l4-5 3 3 5-7" data-page-node-id="i2r6Sp7EBieIyAoriqkKXK"/></svg>
+    <nav class="sb-nav" id="sbNav" data-page-node-id="qh1PHAb7Popx6yeZAGVErb">
+      <div class="sb-group" data-page-node-id="lQFEuLJm0J4pdcOLrI3q3v">总览</div>
+      <button class="sb-item on" data-tab="dash" data-page-node-id="hdj2LeA2pbZdXosD6VAU5f">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="mE6rkB9mtAHgL3kEWDmyuG"><path d="M3 3v18h18M8 17l4-5 3 3 5-7" data-page-node-id="qxuH56Icdoh2EmWPcINlYP"/></svg>
         仪表盘
       </button>
-      <div class="sb-group" data-page-node-id="VojDX9Dm9jB9yHUrNA88uP">内容选题</div>
-      <button class="sb-item" data-tab="insp" data-page-node-id="5GhxHluxz8c2GPBR5CBdCp">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="I6Di8bzJmAqEi0zKonHLtG"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.6 1 1.5 1 2.5h6c0-1 .3-1.9 1-2.5A6 6 0 0012 3z" data-page-node-id="gVFBTs8xiMwdNZ2JcCWrza"/></svg>
+      <div class="sb-group" data-page-node-id="E1YBn2G3y2bt2jE60s7F8O">内容选题</div>
+      <button class="sb-item" data-tab="insp" data-page-node-id="6a5vr2GICbsSJj8nXOgvhH">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="VqRkPoeXUqhhmFtfzSPxQB"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.6 1 1.5 1 2.5h6c0-1 .3-1.9 1-2.5A6 6 0 0012 3z" data-page-node-id="GSq8PsyD85t4Bc5NwHgy3J"/></svg>
         今日灵感
       </button>
-      <button class="sb-item" data-tab="topic" data-page-node-id="ZFsSmzujVSd1pk5Ro1gist">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="UyRE4lDnIyZDbGsGG6v9Mp"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="UWGqPs6B4YTw2YXZavBKU1"/></svg>
+      <button class="sb-item" data-tab="topic" data-page-node-id="mLWXt8GeMgkDXVKWl9QmK8">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Pe2V1TAZVQJgiefiNsa0KI"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="xashguuUbmIYGTsX9nzXpG"/></svg>
         选题池
       </button>
-      <button class="sb-item" data-tab="mat" data-page-node-id="e9BzB635MG0SSuR7yWFoWt">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="NKLhj801sUKEI3SWp55Oj5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 016.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z" data-page-node-id="Wn5QtDTKNzGUN7GLE6AdTF"/></svg>
+      <button class="sb-item" data-tab="mat" data-page-node-id="3NJD5wLKumDb82lo6gT6Vp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="tL8ExFLDCnirSxPXORL65N"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 016.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z" data-page-node-id="AOvUgpxxh2SS2Z4QeZYim1"/></svg>
         素材库
       </button>
-      <div class="sb-group" data-page-node-id="P9mXV8OxwOW61lewJXLcEN">schedule</div>
-      <button class="sb-item" data-tab="todo" data-page-node-id="ypo5zZD1fVq77M7nYcaJba">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="sLAXrHjntcAAyosEJH0tmX"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="FU5CHbCegz3dOhLcnifamW"/></svg>
+      <div class="sb-group" data-page-node-id="bkGrp001">沉淀</div><button class="sb-item" data-tab="basket" data-page-node-id="bkNav001"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18v12a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M2 3.5h20v4.5H2zM9.5 12.5h5"/></svg>收纳筐</button><div class="sb-group" data-page-node-id="S0FFGodVGzyCe2ePPNBpU3">schedule</div>
+      <button class="sb-item" data-tab="todo" data-page-node-id="vv1RcXVbuPxHKw5BlRhhIS">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="mzHombHpsVmuQP44UzBzH7"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="otUHbIetvLCIw5GCfddmQr"/></svg>
         今日待办
       </button>
-      <button class="sb-item" data-tab="cal" data-page-node-id="9hO2DXTzkjQWcqkBAIN8In">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Xf5E2StYC5EJNmBKtc0KRC"><rect x="3" y="4" width="18" height="18" rx="2" data-page-node-id="EcEkHx7IvOvES7iY5GJHLS"/><path d="M16 2v4M8 2v4M3 10h18" data-page-node-id="ydYgo9S4L7Hy6FscNI4HaM"/></svg>
+      <button class="sb-item" data-tab="cal" data-page-node-id="H16tNr1oaXgNUyslHaMmCP">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="8RGq0u8EzWhe1lSD6SL69E"><rect x="3" y="4" width="18" height="18" rx="2" data-page-node-id="nruOkRoGm0kwzFaMgV8Q8n"/><path d="M16 2v4M8 2v4M3 10h18" data-page-node-id="0jbDhSX28sj100JBngHVi1"/></svg>
         发布日历
       </button>
-      <div class="sb-group" data-page-node-id="saZFmZC2dv4tWlnhaSuNng">创作辅助</div>
-      <button class="sb-item" data-tab="rev" data-page-node-id="7WHcQ15QES0mdKgSxYdjVY">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="NGRL3wQmBrHvU28c7MYBz4"><path d="M3 3v18h18M7 15l4-6 4 3 5-7" data-page-node-id="SfhMINZ1DMfrskAk78mVxS"/></svg>
+      <div class="sb-group" data-page-node-id="7AIqXAbPB7lUZY5eHVRT24">创作辅助</div>
+      <button class="sb-item" data-tab="rev" data-page-node-id="viLdDF8k5Ewsvn02ULSGNa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="TtjZo6g3v0BbpOQaBW1dhH"><path d="M3 3v18h18M7 15l4-6 4 3 5-7" data-page-node-id="eBEVAAwqvA4CPoyzQssvd4"/></svg>
         笔记复盘
       </button>
-      <button class="sb-item" onclick="openToolbox('bd')" data-page-node-id="WYCLB6dMErxZoegI2AOdyb">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Fl9eugTv0Rp0AMM3sVMIbQ"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="RnexMVe4m8aFsrt7BgCaXw"/></svg>
+      <button class="sb-item" onclick="openToolbox('bd')" data-page-node-id="Oe4t0h6bbhDnktPweLSxrf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="pEEPdE0DFARkPybj1BFmld"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="nO57gA7ZULA7Bb7kPiYgzW"/></svg>
         爆款拆解
       </button>
-      <button class="sb-item" onclick="openToolbox('tg')" data-page-node-id="q7ZH8mEEjZKaPySqzVbb3Y">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="XXL6tJ6r0RfF5XYsBJD36n"><path d="M4 22h14a2 2 0 002-2V7l-5-5H6a2 2 0 00-2 2v4" data-page-node-id="QMHSlr4bmkkClSy4XSus7H"/><path d="M14 2v4a2 2 0 002 2h4" data-page-node-id="LDtawmMQEx6fBDA8j0h54Y"/></svg>
+      <button class="sb-item" onclick="openToolbox('tg')" data-page-node-id="ZztuMCx4Cim86yhqxsvEex">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="arasvojDFWzYLwEu9cHdNc"><path d="M4 22h14a2 2 0 002-2V7l-5-5H6a2 2 0 00-2 2v4" data-page-node-id="m2fxFQIAXyCkZzmGiRceHd"/><path d="M14 2v4a2 2 0 002 2h4" data-page-node-id="yWByyzmkpD3E4TOwDYnDQC"/></svg>
         标题生成
       </button>
     </nav>
-    <div class="sb-foot" data-page-node-id="zHjy3DQyYsI5IKQwAdVhcU">
-      <div class="today-mini" id="todayMini" onclick="switchTab('todo')" title="去今日待办" data-page-node-id="WqNws3rn1NNF860MAhEjoV">
-        <div class="tm-main" data-page-node-id="DIBXrSFRBR8L3z0GPDBwTZ">
-          <div class="tm-ring-wrap" data-page-node-id="YlLWbaMk4keoeVeCo3HMcA">
-            <svg class="tm-ring" viewBox="0 0 56 56" data-page-node-id="ud1SZy6MeFeMwB2na8x1a1">
-              <circle class="ring-bg" cx="28" cy="28" r="24" data-page-node-id="RDgy6zkLqbtIHkP7fLk73U"/>
-              <circle class="ring-fg" id="tmRingFg" cx="28" cy="28" r="24" data-page-node-id="wiOcOXuOrUnsA2feRAKfqn"/>
+    <div class="sb-foot" data-page-node-id="vjc0hpEzKbQZ6URax1U28R">
+      <div class="today-mini" id="todayMini" onclick="switchTab('todo')" title="去今日待办" data-page-node-id="yLuh2NM2vV8HHu5T44XlCe">
+        <div class="tm-main" data-page-node-id="aY3ghfONJXi1wQx5SbJOa6">
+          <div class="tm-ring-wrap" data-page-node-id="qHsFno3gImb5MG9HEo7sYz">
+            <svg class="tm-ring" viewBox="0 0 56 56" data-page-node-id="ZoInmLv3aiZ9h8RvWAJ93D">
+              <circle class="ring-bg" cx="28" cy="28" r="24" data-page-node-id="1H7bU9LU501IvHnHD9I9Zk"/>
+              <circle class="ring-fg" id="tmRingFg" cx="28" cy="28" r="24" data-page-node-id="TyFBH4QbKvRQ3hO7nfxsd7"/>
             </svg>
-            <div class="tm-center" data-page-node-id="n5brvpdlx9mspsTxwUiJHS"><b id="tmTotal" data-page-node-id="Y0M2LJn8GqFJ3A6ocTvV1C">0</b><span data-page-node-id="fjDTMHlrRu8PZnToYmZUMF">待处理</span></div>
+            <div class="tm-center" data-page-node-id="kSnbGCWlK5BWICVVXKiFbK"><b id="tmTotal" data-page-node-id="gcfYEqXfELeQOCftPQ5CHh">0</b><span data-page-node-id="X2NbpBDDg4ftDlWHjEIXIV">待处理</span></div>
           </div>
-          <div class="tm-side" data-page-node-id="AnaprXM1twV1sFZRX4pchp">
-            <div class="tm-title" data-page-node-id="xDFDVEfG8BSwCte52dA9h1"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="hpeKZGN8nGCK73OzvhntmY"><circle cx="12" cy="12" r="10" data-page-node-id="PSZm9J4KrkeoX22Z1jFF4N"/><path d="M12 6v6l4 2" data-page-node-id="XGsu0HDRPE0CqQcsnsBHE1"/></svg>今日要处理</div>
-            <div class="tm-rows" id="tmRows" data-page-node-id="f0hFJXYmqdIpmCGXC0yDRa"></div>
+          <div class="tm-side" data-page-node-id="eloLOHI0Qhj87HY7MRNE3w">
+            <div class="tm-title" data-page-node-id="4q8QhqfIhPFbwovtb1sDLX"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="lOVCsSy7bG7OL3XcPOjGi0"><circle cx="12" cy="12" r="10" data-page-node-id="fbFCLJrDwkpjiRHBI7GWqR"/><path d="M12 6v6l4 2" data-page-node-id="TEkLDE1bpJ2BxjUcSm08nO"/></svg>今日要处理</div>
+            <div class="tm-rows" id="tmRows" data-page-node-id="8TjnWElOxyrvYks1hlIrzk"></div>
           </div>
         </div>
       </div>
-      <div class="sync-pill" id="syncPill" title="数据同步状态" data-page-node-id="uOoHIOmxYiqrKH0lAHUTDE">
-        <span class="sync-dot" id="syncDot" data-page-node-id="bGBhZbIB9m1XJlCU7CGw6E"></span><span class="sync-txt" id="syncTxt" data-page-node-id="LJ65tOZtVkXzzOQCAE6qaB">连接中</span>
+      <div class="sync-pill" id="syncPill" title="数据同步状态" data-page-node-id="Ag5qXBoMtAflEBdA2RCpgw">
+        <span class="sync-dot" id="syncDot" data-page-node-id="jbKgR7ALyHFg0twcLt9rQ2"></span><span class="sync-txt" id="syncTxt" data-page-node-id="NaWnD6aoUZI1WhWduFR9Mv">连接中</span>
       </div>
-      <div class="sb-tools" data-page-node-id="Z0ST0fIgzD1vwGg7A9GN09">
-        <button onclick="exportJSON()" data-page-node-id="LaLHYDJEx4w8Hg5P9Gm4Aq">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="19AyYYpOX61UzFp2gylCsk"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" data-page-node-id="oqiMEDwESmCRyUO0KyMNDS"/></svg>
+      <div class="sb-tools" data-page-node-id="ExxVCbMYzGEJxBnhBVmQ0l">
+        <button onclick="exportJSON()" data-page-node-id="DhP7WhfMCVCCNeAbBf0HfF">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Qk9qeONfzLqdTHzHAxmGQA"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" data-page-node-id="UHWU05GC92w1KYyq9ASVW3"/></svg>
           导出
         </button>
-        <button onclick="document.getElementById('importFile').click()" data-page-node-id="zjpxppCBwiL2vPhK05gFnO">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="2ccJ1K3bHS3XcTJwz0SF07"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" data-page-node-id="rlTKeMLQJoArxO27UkTMAw"/></svg>
+        <button onclick="document.getElementById('importFile').click()" data-page-node-id="kefWCSqiaCREAEzIaJbF0Q">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="VmTPpYHIAyRcELomuUvqB1"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" data-page-node-id="SZMFJoVYwK9kwE10YPm1HH"/></svg>
           导入
         </button>
-        <button onclick="openToolbox()" data-page-node-id="e7voEUYK0FKOMPD2gB9K5F">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="xwgEYaEtqDoLaQeWZS6HEY"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="dpwQNiHsKhdWeTnvOTWqnn"/></svg>
+        <button onclick="openToolbox()" data-page-node-id="WV04C0t03AqE4sSW95PeSw">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="9uBWIcNJoMSM4IMPHR6t2H"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="4M7ApsiI1rqBPiX7fvGUwO"/></svg>
           工具
         </button>
       </div>
     </div>
   </aside>
 
-  <header class="mobile-topbar" data-page-node-id="Bekwrx0Onw4muwE33BVoZs">
-    <div class="mt-logo" data-page-node-id="A9EpIPixLzH3iBgviKJGcY"><span class="ip-logo ip-img-2" data-page-node-id="mpavCpvtnuq2vP8HdTGSpf"></span>创作工作台</div>
-    <div class="mt-actions" data-page-node-id="FDve2bgqxmwILzltAiVgis">
-      <div class="sync-pill" style="padding:3px 8px" data-page-node-id="shu6ez3EdrUfZH7jlc7u0X"><span class="sync-dot" id="syncDot2" data-page-node-id="NnvrB2kI2yKmhrVIUg9kFX"></span></div>
-      <button class="mt-btn" onclick="openToolbox()" title="工具箱" data-page-node-id="pXoxRZoziG8WgHfGYnKMop">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="WtDTSHOyfkVteVqaVaix3B"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="VLvY8YRSYLsd2UBWELsTNa"/></svg>
+  <header class="mobile-topbar" data-page-node-id="CAKdwc4JOJRTjF6Bbn2127">
+    <div class="mt-logo" data-page-node-id="9f1FebPXGKSZCoOZr16FO1"><span class="ip-logo ip-img-2" data-page-node-id="RNNM2tgtfwLorFh1DphdFk"></span>创作工作台</div>
+    <div class="mt-actions" data-page-node-id="tbdYM4gGmaFtreMqSzLChD">
+      <div class="sync-pill" style="padding:3px 8px" data-page-node-id="SDrkDZDxz0JmJsXLJdGjcW"><span class="sync-dot" id="syncDot2" data-page-node-id="eGASLqkEKwB5VBrMAuM5sD"></span></div>
+      <button class="mt-btn" onclick="openToolbox()" title="工具箱" data-page-node-id="XjiuFgb9Ci0Gd2P7W85JhB">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="C99DObAqfJH7EkibrWJ5w0"><path d="M14.7 6.3a4.5 4.5 0 00-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 006-6L14 13l-3-3z" data-page-node-id="QFZSsRmXmI0j6imP3xCWji"/></svg>
       </button>
-      <button class="mt-btn" onclick="exportJSON()" title="导出" data-page-node-id="rbFGNqkwzQGHa5R2e0TgZF">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="kx5hwKZBZNx9svZhRCY3i2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" data-page-node-id="9vFFHWoQcp2VEaUHmLb5rw"/></svg>
+      <button class="mt-btn" onclick="exportJSON()" title="导出" data-page-node-id="yOtnxUoqAjMfms1MZUoF2V">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="781b8uUP22LdEDXISYdoMk"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" data-page-node-id="tlFMlRZTcUrD95CPk6skEF"/></svg>
       </button>
-      <button class="mt-btn" onclick="document.getElementById('importFile').click()" title="导入" data-page-node-id="FCFyehyBN9HDfc6mW9o2XN">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="cFJIsbmdVfeh8qcLvQhJ5o"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" data-page-node-id="qd4SNq9iszLhV4iQw2K5Mz"/></svg>
+      <button class="mt-btn" onclick="document.getElementById('importFile').click()" title="导入" data-page-node-id="imHf2BYr7SYSDCnwOayzEC">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="6dy0KVORQXZYTfGB6Mb7R1"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" data-page-node-id="4ZpEqwCDZ98LaPgE0cTmM3"/></svg>
       </button>
     </div>
   </header>
 
-  <main class="main" data-page-node-id="2Fesolsm6DFYGQKAvWVxWw">
-    <div class="page-head" data-page-node-id="sNCkYsH32FhWTVZDBK5lgx">
-      <div class="ph-block" data-page-node-id="WNMxT4IpBFSN7AVN2zGlnC">
-        <span class="ph-eyebrow" id="phEyebrow" data-page-node-id="QvAPKPJhQNCQZrxIhqFYxa">INSPIRATION</span>
-        <h1 class="ph-title" id="phTitle" data-page-node-id="4cuGol1j5JM7qk4XbBCRBQ">今日灵感</h1>
+  <main class="main" data-page-node-id="yvfqkfPw7CcJnMVv7rLADT">
+    <div class="page-head" data-page-node-id="CWoZvQJOVDxmmSDrwKQBEl">
+      <div class="ph-block" data-page-node-id="QALl0NJfcnJX3CdHxLohJq">
+        <span class="ph-eyebrow" id="phEyebrow" data-page-node-id="FC3yyr4WAdbhL90oHEk6HE">INSPIRATION</span>
+        <h1 class="ph-title" id="phTitle" data-page-node-id="nTUWSiIyZPxiphGa137Bq3">今日灵感</h1>
       </div>
-      <div class="ph-hint" id="phHint" data-page-node-id="HJOZEhDRGn65zgHbJEYP8d">记录灵感碎片：想到什么写什么，随时转选题或存素材。</div>
+      <div class="ph-hint" id="phHint" data-page-node-id="rKah6UlQcFm0uFHFjCWq0F">记录灵感碎片：想到什么写什么，随时转选题或存素材。</div>
     </div>
-    <div class="account-bar" id="accountBar" data-page-node-id="Lie8wq1pXkAp8rfOETDbtZ"></div>
-    <div id="alertBar" data-page-node-id="TzvkLu9O8FxAbOJOA44UUG"></div>
-    <section id="main" data-page-node-id="pBrNigGrCBFcV4Sli1sIwJ"></section>
+    <div class="account-bar" id="accountBar" data-page-node-id="iWsLF9OFWwCyI7PvbxTBNI"></div>
+    <div id="alertBar" data-page-node-id="M5CcR3AUdX8mzJKYndrPw3"></div>
+    <section id="main" data-page-node-id="eZRldTA4GJJ9Y7FHchBiA3"></section>
   </main>
 </div>
 
-<input type="file" id="importFile" accept=".json" class="hidden" onchange="importJSON(this)" data-page-node-id="DOHQZTpVzDA9e1GB34XWiv">
+<input type="file" id="importFile" accept=".json" class="hidden" onchange="importJSON(this)" data-page-node-id="zMsr8SUn5CCl66DvA8fYKX">
 
-<nav class="bottom-nav" data-page-node-id="l8MZiwq96IIa4bIUCAK2BJ">
-  <div class="bn-in" data-page-node-id="oKCipa6mDbLAe3JsywWs7G">
-    <button class="bn-item on" data-tab="dash" data-page-node-id="m2QZTroejKfEp4SdfgSTqx">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="p2yzE6jhdTTyRT5cFglTiR"><path d="M3 3v18h18M8 17l4-5 3 3 5-7" data-page-node-id="appFo20oigMSOX2TCCjDFg"/></svg>
+<nav class="bottom-nav" data-page-node-id="Dh4tmhtb70eQAgdDBZ0wPI">
+  <div class="bn-in" data-page-node-id="I1oB09zzPk2CPA07gorytX">
+    <button class="bn-item on" data-tab="dash" data-page-node-id="xR5dUDmWjNwUu6jtwFKGjL">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="w31N7ENgBG9BiYgiVUSlc3"><path d="M3 3v18h18M8 17l4-5 3 3 5-7" data-page-node-id="nEn7BZ1vROzW2ZFJU8Ylpu"/></svg>
       总览
     </button>
-    <button class="bn-item" data-tab="insp" data-page-node-id="0TGMHQiiHczRPfbNteM5k5">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="dBUI5WlwisE9TQn4rvnsaw"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.6 1 1.5 1 2.5h6c0-1 .3-1.9 1-2.5A6 6 0 0012 3z" data-page-node-id="aeyEv7niS2gUw1flPKtbE5"/></svg>
+    <button class="bn-item" data-tab="insp" data-page-node-id="rkHqgMBYqUvHaSmYRSWxAG">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="AbTEuzGk3qR5Xkbf7ASnfH"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.6 1 1.5 1 2.5h6c0-1 .3-1.9 1-2.5A6 6 0 0012 3z" data-page-node-id="kqYIFWgbiK6Xf3ppMye52P"/></svg>
       灵感
     </button>
-    <button class="bn-item" data-tab="topic" data-page-node-id="lsfxLPbWLsiAbX2EWBkgiA">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="oaw5OjUpiwFjMy0waU4NFx"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="nwttlQebzapuomnHzjz6YZ"/></svg>
+    <button class="bn-item" data-tab="topic" data-page-node-id="HqUKVFhxdvTOnTD21yJxeA">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="kMHUiInTzNaQBat526jk8m"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="M6Cp0hCmoVR15XAUmtObnn"/></svg>
       选题
     </button>
-    <button class="bn-item" data-tab="mat" data-page-node-id="CyK4YGPyUQ2iRc6g4GehNb">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="f81vhKGKBqPKtVcljy0DYp"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 016.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z" data-page-node-id="F863yAMee5dQMt65i1mJxd"/></svg>
+    <button class="bn-item" data-tab="mat" data-page-node-id="iSjfgQ4SPBHFr1oGL0PbyX">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="2BKbsOI2DMhfB6Z2o8rZSc"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 016.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z" data-page-node-id="XC6dYcZBtZV3m2XFHmGHvm"/></svg>
       素材
     </button>
-    <button class="bn-item" data-tab="todo" data-page-node-id="vyYBExd1TCeLRlgnvUh11d">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="aAH15NJQaqfjVz0YpXXutA"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="E53GUJHoJKGY03qLdKCosN"/></svg>
+    <button class="bn-item" data-tab="basket" data-page-node-id="bkBn001"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18v12a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M2 3.5h20v4.5H2zM9.5 12.5h5"/></svg>收纳</button><button class="bn-item" data-tab="todo" data-page-node-id="bHvLhC3vlGP52lQsvMGBNw">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Es7m5yHviB0JJp4z3N5EzG"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" data-page-node-id="bky1agmVo4cd1H8EE7EghH"/></svg>
       待办
     </button>
-    <button class="bn-item" data-tab="cal" data-page-node-id="WRf05dzRt5Rx9nGisVBquR">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="kql1XlSPCryFRYA13hneBw"><rect x="3" y="4" width="18" height="18" rx="2" data-page-node-id="eLvvakss5NTsHK7XRTnQjt"/><path d="M16 2v4M8 2v4M3 10h18" data-page-node-id="peFzXtNihUNEBcNijdEbKm"/></svg>
+    <button class="bn-item" data-tab="cal" data-page-node-id="gs7syUhR6ooquarpFC7pSO">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ym7ehCc0iMO5OPngXkaqBx"><rect x="3" y="4" width="18" height="18" rx="2" data-page-node-id="akZzlrJ3ertKFtdVLmOqcA"/><path d="M16 2v4M8 2v4M3 10h18" data-page-node-id="jPeYEHFNtG32rIrFlIwWv9"/></svg>
       日历
     </button>
-    <button class="bn-item" data-tab="rev" data-page-node-id="PoWQ53hZ1xjqlNZ0WSrzmd">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="BGesqn1gzO4rzFzPX8eIe5"><path d="M3 3v18h18M7 15l4-6 4 3 5-7" data-page-node-id="JZ46e8wNZClu1BKYEMoHXh"/></svg>
+    <button class="bn-item" data-tab="rev" data-page-node-id="Wkm2WflkP95C1o6XMx3CVE">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ax3V3eP0Yj3kiBZ5kRHoDV"><path d="M3 3v18h18M7 15l4-6 4 3 5-7" data-page-node-id="sPIupeAxZ9HngmrHXc2Z9T"/></svg>
       复盘
     </button>
   </div>
 </nav>
 
-<div class="drawer-mask hidden" id="toolboxMask" onclick="if(event.target===this)closeToolbox()" data-page-node-id="oALhIJ53O2HGUKRR8Ma1nq">
-  <div class="drawer" data-page-node-id="cZqnH5DVvvM25UmjKWySNL">
-    <div class="drawer-head" data-page-node-id="IYWY0eQhThM8vfRSyN02TO">
-      <span class="ip-stat ip-img-1" style="width:38px;height:38px;margin-right:10px;flex-shrink:0" data-page-node-id="tu3chEXSSsm1cI14CkHUcu"></span>
-      <h3 data-page-node-id="B8VDMe04gmvWolr2SVeDzz">创作工具箱</h3>
-      <button class="close-x" onclick="closeToolbox()" data-page-node-id="sLJgeCETvFxdz06jqCTjC8">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" data-page-node-id="XVJKL0L3Yt5jGuayTMAUm5"><path d="M18 6L6 18M6 6l12 12" data-page-node-id="kpSjRYdyaU9hwqNgeb5XbA"/></svg>
+<div class="drawer-mask hidden" id="toolboxMask" onclick="if(event.target===this)closeToolbox()" data-page-node-id="jYJMvv1K9WZqRKzzfXqXqE">
+  <div class="drawer" data-page-node-id="qzl3LDi2puAJH8hjXkM56C">
+    <div class="drawer-head" data-page-node-id="AdveDuNjesHot9XvGeaZkF">
+      <span class="ip-stat ip-img-1" style="width:38px;height:38px;margin-right:10px;flex-shrink:0" data-page-node-id="eXSmJ0dB8iqkD6H7wJG0Pk"></span>
+      <h3 data-page-node-id="5rN6xhu9pn7FN9P3sP5s0j">创作工具箱</h3>
+      <button class="close-x" onclick="closeToolbox()" data-page-node-id="mWuiWIR1BlDSbvWimuzGg4">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" data-page-node-id="elzBJWF6p8NL1IT2JvDS6L"><path d="M18 6L6 18M6 6l12 12" data-page-node-id="T99AP1IItXrsreyHyAGIht"/></svg>
       </button>
     </div>
-    <div class="drawer-tabs" data-page-node-id="dfyS8XOhsJzrQJ3G57Ueru">
-      <button class="btn btn-pri" id="tbTab1" onclick="toolTab(1)" data-page-node-id="jkt1qXKFevvNkWfCWbrGQE">爆款拆解</button>
-      <button class="btn btn-ghost" id="tbTab2" onclick="toolTab(2)" data-page-node-id="5AbSsDDjJSoPO6eeHOaaeY">标题生成</button>
+    <div class="drawer-tabs" data-page-node-id="g2j2KuOVvzl6ZVGSmTSd2E">
+      <button class="btn btn-pri" id="tbTab1" onclick="toolTab(1)" data-page-node-id="9cpA0D4dCKOX5qvLqS0G8Z">爆款拆解</button>
+      <button class="btn btn-ghost" id="tbTab2" onclick="toolTab(2)" data-page-node-id="FGoWRdGvWe4Gnz28hr9Lac">标题生成</button>
     </div>
-    <div class="drawer-body" id="toolBody" data-page-node-id="C2Uz1v1RSfX1ARiOAn2bXB"></div>
+    <div class="drawer-body" id="toolBody" data-page-node-id="NiyGmSLRoXB8Jdkp1mJLKI"></div>
   </div>
 </div>
 
-<div class="editor-mask hidden" id="editorRoot" data-page-node-id="seCNX4DTR3XNRhMeNOKAk6">
-  <div class="editor-top" data-page-node-id="e8ft40oSDWJDOY6ggQjkOP">
-    <button class="editor-back" onclick="closeEditor()" data-page-node-id="UIIa25OTLsxuiQmzEjbNID">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="KP2PAVEedLWdGfRkk3PuKd"><path d="M15 18l-6-6 6-6" data-page-node-id="YqGUlPl3Ur3ZHubmAQzehX"/></svg>返回
+<div class="editor-mask hidden" id="editorRoot" data-page-node-id="JYHzUF43hE4eaxt2k0qKbu">
+  <div class="editor-top" data-page-node-id="fzjimUWoPWxkS2DCp1nH89">
+    <button class="editor-back" onclick="closeEditor()" data-page-node-id="sdySStkZPt9GpePZcS1VvI">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="QNIAe99M74WCT1ljgNqsmh"><path d="M15 18l-6-6 6-6" data-page-node-id="jVOmJzR8srGc3H6Ss1RyUB"/></svg>返回
     </button>
-    <input class="editor-title-input" id="edTitle" placeholder="选题标题" oninput="editorInput()" data-page-node-id="hLxwsS9xzIuELMi1ePC5Vg">
-    <div class="editor-top-meta" data-page-node-id="K3vnljbyHW2cqkqQSPQVzO">
-      <span class="editor-save-state saved" id="edState" data-page-node-id="Q6CxrP5xbuCulxSwDZvqI6"><i class="dot" data-page-node-id="kOvOXea461J51216cp2Bum"></i><span id="edStateTxt" data-page-node-id="BufAju0wMy8s488jWY5i2Y">已保存</span></span>
-      <button class="btn btn-pri btn-sm" onclick="saveEditor(false)" data-page-node-id="AXKB4QiXgNF6uD8BuUQ5LL">保存</button>
+    <input class="editor-title-input" id="edTitle" placeholder="选题标题" oninput="editorInput()" data-page-node-id="P7NoLAQNylUcDp8Aq0LUFy">
+    <div class="editor-top-meta" data-page-node-id="tmMfdD9wxj1YQAiDuUYJ1G">
+      <span class="editor-save-state saved" id="edState" data-page-node-id="Eq1nWwa5RqYYEAIZsxqGd5"><i class="dot" data-page-node-id="g3H7EdXFwgL2YVl07sdNWK"></i><span id="edStateTxt" data-page-node-id="zOi3Ye8gfMJtcpy7KzzDQC">已保存</span></span>
+      <button class="btn btn-pri btn-sm" onclick="saveEditor(false)" data-page-node-id="HKA0Ha0HDXFAgwOzcVsTZb">保存</button>
     </div>
   </div>
-  <div class="editor-body" id="editorBody" data-page-node-id="y6uEsEQE7OggdBokpUmLLD">
-    <div class="editor-col" data-page-node-id="S4jMOWV4fElLdo5M21I8S3">
-      <div class="editor-form" data-page-node-id="QUPr2k6dV078CWLciy27Tx">
-        <label class="f-label" style="margin:0" data-page-node-id="uqBjJKmYXZFajUwuYq0yER">形式</label>
-        <div class="seg" id="edType" data-type="img" data-page-node-id="kF9DzkPR4YVTaIL4d9KfD3">
-          <button type="button" data-t="img" class="on" onclick="editorTypePick(this,'img')" data-page-node-id="y5MINVqHXafonbdv139xaU">图文</button>
-          <button type="button" data-t="vid" onclick="editorTypePick(this,'vid')" data-page-node-id="0BstFYrsBaxVkkyr2xaVOB">视频</button>
+  <div class="editor-body" id="editorBody" data-page-node-id="IjdNqBh8ynebUg3b4wjkP3">
+    <div class="editor-col" data-page-node-id="SZTJDBeaOKvTWRyNEFago7">
+      <div class="editor-form" data-page-node-id="CZ4XPxoB9kdiFarmdIbwEk">
+        <label class="f-label" style="margin:0" data-page-node-id="oB7k1lB4GWNv3tzhZXJa3R">形式</label>
+        <div class="seg" id="edType" data-type="img" data-page-node-id="B08NYHcINzajAo67Pk2lNq">
+          <button type="button" data-t="img" class="on" onclick="editorTypePick(this,'img')" data-page-node-id="PKTndqyapEmnWVRCRwcRwV">图文</button>
+          <button type="button" data-t="vid" onclick="editorTypePick(this,'vid')" data-page-node-id="BQdB3Pzni4yy4fYxcluZHZ">视频</button>
         </div>
-        <div class="seg" id="edViewSeg" data-page-node-id="ZmAqYpF9gjTrlrSEs7CRMc">
-          <button type="button" data-v="1" class="on" onclick="editorView(1)" data-page-node-id="PjnKVNCt2Dm6Hwtc3cm6bO">编辑</button>
-          <button type="button" data-v="2" onclick="editorView(2)" data-page-node-id="eCEnHUnYrdVhJ3DRk9c5au">预览</button>
+        <div class="seg" id="edViewSeg" data-page-node-id="1EiW8alfaCIYnBQsqZbxwO">
+          <button type="button" data-v="1" class="on" onclick="editorView(1)" data-page-node-id="qsZWDTssMkVMeEHFaHO4j8">编辑</button>
+          <button type="button" data-v="2" onclick="editorView(2)" data-page-node-id="VCQl1ze5V8aHRbMFDhEETX">预览</button>
         </div>
-        <label class="f-label" style="margin:0" data-page-node-id="7C0wwT5cmaU8GezWbY2gfA">账号</label>
-        <select id="edAcc" onchange="editorInput()" data-page-node-id="7ADcrxT0kS2Xkhv8LVX1bn"></select>
-        <label class="f-label" style="margin:0" data-page-node-id="CfUfIm7UTDUFpT0y3Ph8mh">排期</label>
-        <input type="date" id="edDate" onchange="editorInput()" data-page-node-id="Sy9z903SeO9P8mcXz5tRau">
+        <label class="f-label" style="margin:0" data-page-node-id="KEva5hQ3KizdQoTUxcgMVo">账号</label>
+        <select id="edAcc" onchange="editorInput()" data-page-node-id="MquhFGndALKmqhBaf7dAs4"></select>
+        <label class="f-label" style="margin:0" data-page-node-id="qPAq7OM7A61hWG2BGA0RXD">排期</label>
+        <input type="date" id="edDate" onchange="editorInput()" data-page-node-id="9zGFbQXqhGw41RHjjWlRk8">
       </div>
-      <div class="editor-area" data-page-node-id="Awbdj2is5Wf3qAaaV1ZoNN">
-        <div class="ed-toolbar" id="edToolbar" data-page-node-id="YHBYAt0S1yqBiYCcG2LkQy">
-          <div class="tb-row" data-page-node-id="z0Kvc9A3dkJnwHs5sDYmGI">
-            <div class="tb-group" data-page-node-id="MscVX8uG1uULCANTgYtDMd">
-              <span class="tb-gl" data-page-node-id="aVcy79vpBoAun5F3je8Vdc">段落</span>
-              <select title="段落格式" onchange="richBlock(this.value);this.value=''" data-page-node-id="p0n0OZGctYGAIxOoLNG0wC">
-                <option value="" data-page-node-id="qqAtEVngF3Rzdo0tYGYA2A">格式</option>
-                <option value="H1" data-page-node-id="fhhoODmKMJgW3iQe5iMEBr">标题1</option>
-                <option value="H2" data-page-node-id="nuVe0VKll5O03SCP38HIR2">标题2</option>
-                <option value="H3" data-page-node-id="HtWCwKZWxzo6y6r4gM8qP5">标题3</option>
-                <option value="P" data-page-node-id="Atp8Or2kkPBpZLjnBb8J0a">正文</option>
-                <option value="BLOCKQUOTE" data-page-node-id="1ktWshVcLC1LIYkt8LJy4h">引用</option>
+      <div class="editor-area" data-page-node-id="gBeU3kdUNjnxMvEZW3m49v">
+        <div class="ed-toolbar" id="edToolbar" data-page-node-id="rCfPMwR9oM1r1JxA0E0jMN">
+          <div class="tb-row" data-page-node-id="F73sZOCxeCVc0AGpZUWgrv">
+            <div class="tb-group" data-page-node-id="9xVmA1gSDcIJiZCanMuVHG">
+              <span class="tb-gl" data-page-node-id="B2pcxaLez03YbFENmJcj8m">段落</span>
+              <select title="段落格式" onchange="richBlock(this.value);this.value=''" data-page-node-id="D2Lakwr8TWAqwwZKam7zha">
+                <option value="" data-page-node-id="kL6uJDycWdySc85OgQfITq">格式</option>
+                <option value="H1" data-page-node-id="CJWKqmD4YpJ1CVoCNAWMHN">标题1</option>
+                <option value="H2" data-page-node-id="oAnokiPL7EPgMLDvUXGegc">标题2</option>
+                <option value="H3" data-page-node-id="JCj0rA4vFmRDZR9pRDo0HW">标题3</option>
+                <option value="P" data-page-node-id="FAz257u40jyymOUaOYNegL">正文</option>
+                <option value="BLOCKQUOTE" data-page-node-id="XiTyDkufCzi8CO77rGoaee">引用</option>
               </select>
-              <button class="tb" title="引用" onmousedown="event.preventDefault()" onclick="richBlock('BLOCKQUOTE')" data-page-node-id="earb6cGscrIhnrUMOxyDzw">引用</button>
+              <button class="tb" title="引用" onmousedown="event.preventDefault()" onclick="richBlock('BLOCKQUOTE')" data-page-node-id="sMl9m1zhLxXpBcAGoyLyxh">引用</button>
             </div>
-            <div class="tb-group" data-page-node-id="QOZFT1MZFSQa2EjkdnGJk1">
-              <span class="tb-gl" data-page-node-id="AR6Fz8GQWAGoOdiAemBWo7">编辑</span>
-              <button class="tb" id="btnUndo" title="撤销 (Ctrl+Z)" onmousedown="event.preventDefault()" onclick="richUndo()" data-page-node-id="XimFUptFOwLUS4XqEenBMB">↶</button>
-              <button class="tb" id="btnFmtPaint" title="格式刷：先选中带格式文字，点此拾取，再选中目标文字应用" onmousedown="event.preventDefault()" onclick="fmtPaintToggle()" data-page-node-id="4scb44mDESOK7eIRCu8vbA">刷</button>
-              <button class="tb" id="btnEmoji" title="插入表情" onmousedown="event.preventDefault()" onclick="toggleEmoji()" data-page-node-id="6lQr7uLWM7iyArPLbCabqh">😊</button>
+            <div class="tb-group" data-page-node-id="mnEDDItbgeRZvA2E8AQJz0">
+              <span class="tb-gl" data-page-node-id="5bXcni6upgg199RhPLYRUo">编辑</span>
+              <button class="tb" id="btnUndo" title="撤销 (Ctrl+Z)" onmousedown="event.preventDefault()" onclick="richUndo()" data-page-node-id="hLEUiE47jAzBZlB0e5fy3c">↶</button>
+              <button class="tb" id="btnFmtPaint" title="格式刷：先选中带格式文字，点此拾取，再选中目标文字应用" onmousedown="event.preventDefault()" onclick="fmtPaintToggle()" data-page-node-id="gX6XzbyqpHAKSvDur3xkS2">刷</button>
+              <button class="tb" id="btnEmoji" title="插入表情" onmousedown="event.preventDefault()" onclick="toggleEmoji()" data-page-node-id="WvAqHWk7LWXQCKggpN756G">😊</button>
             </div>
-            <div class="tb-group" data-page-node-id="MSSPT6tfjUNZHaSqU3YFAv">
-              <span class="tb-gl" data-page-node-id="9SwyedCVj1ZamrpF7MPbpY">字体</span>
-              <select title="字号" onchange="richExec('fontSize',this.value);this.value=''" data-page-node-id="ax40g0FxVzDtMN1Izz3pdT">
-                <option value="" data-page-node-id="K4G9HH1tC6T375kJytwL1q">字号</option>
-                <option value="1" data-page-node-id="Rxb7fPbcNWfDFMTySfyU3T">10</option>
-                <option value="2" data-page-node-id="Rjguf4Ml3rBjvl6sYCNZ0H">13</option>
-                <option value="3" data-page-node-id="suWezfR0dWT7IllStI0jJD">16</option>
-                <option value="4" data-page-node-id="8SGYgt3aRhi406uTMqZAv1">18</option>
-                <option value="5" data-page-node-id="UPFiUexpdve0sTSvbBhxFa">24</option>
-                <option value="6" data-page-node-id="F21zG0VT5NL1prn7SHpC6t">32</option>
-                <option value="7" data-page-node-id="rFqUEhOnEejYZgfrcTY5kA">40</option>
+            <div class="tb-group" data-page-node-id="0NYUHurRnT3gRP679pKOya">
+              <span class="tb-gl" data-page-node-id="UBhL8E1aUcfo40ew0cDUWU">字体</span>
+              <select title="字号" onchange="richExec('fontSize',this.value);this.value=''" data-page-node-id="evc9ArE2VZGdWgUGdFJlfD">
+                <option value="" data-page-node-id="7YsLMvUugRXnLa0lhM3I2F">字号</option>
+                <option value="1" data-page-node-id="uzX8PXvPlIoNDwHu1SADYd">10</option>
+                <option value="2" data-page-node-id="3zgL6wRam6oc5zLr6VlDdD">13</option>
+                <option value="3" data-page-node-id="I5b6Gn9NSMPaGr8KU5FwJx">16</option>
+                <option value="4" data-page-node-id="D2u4qtESTqpql78m4paGNa">18</option>
+                <option value="5" data-page-node-id="zJFHoXFjjxCGNAlUecYoDE">24</option>
+                <option value="6" data-page-node-id="BpRFHwJB0b9D4KvoHBDF27">32</option>
+                <option value="7" data-page-node-id="dctaLVCPvKuqKepYfAHHg1">40</option>
               </select>
-              <button class="tb" title="加粗" onmousedown="event.preventDefault()" onclick="richExec('bold')" data-page-node-id="BRcZ7Y6C2PYlLq4jEnewua"><b data-page-node-id="MPStwabR4EOWRpxEsO8cFY">B</b></button>
-              <button class="tb" title="斜体" onmousedown="event.preventDefault()" onclick="richExec('italic')" data-page-node-id="qNTwJNdxrYSZ6PjWZHE80p"><i data-page-node-id="vX7rCAV7pCuGUkFjZScHp7">I</i></button>
-              <button class="tb" title="下划线" onmousedown="event.preventDefault()" onclick="richExec('underline')" data-page-node-id="OGiJnmz15PLtMAFXdDJu3d"><u data-page-node-id="mjNLJBF9KHUGC7RYMutNw8">U</u></button>
-              <button class="tb" title="删除线" onmousedown="event.preventDefault()" onclick="richExec('strikeThrough')" data-page-node-id="1kY2cf5unDPyVLqGOOvW62"><s data-page-node-id="bLCZPAIyUHrr5Mh5ZjU7x0">S</s></button>
-              <input type="color" title="字体颜色" value="#3D2914" onchange="richExec('foreColor',this.value)" data-page-node-id="dBk8HMPU0G0d3xtbqiZtrU">
+              <button class="tb" title="加粗" onmousedown="event.preventDefault()" onclick="richExec('bold')" data-page-node-id="DZgFe7HdwLuPNqTAgAgDlM"><b data-page-node-id="VEIofsR5kuOODHM9deMckA">B</b></button>
+              <button class="tb" title="斜体" onmousedown="event.preventDefault()" onclick="richExec('italic')" data-page-node-id="2OdHuIQPTQJP1iGGs09www"><i data-page-node-id="yf3Try8XSBgjCDCBw1qJ8I">I</i></button>
+              <button class="tb" title="下划线" onmousedown="event.preventDefault()" onclick="richExec('underline')" data-page-node-id="2gASPHLikVtouDuEvSrh9H"><u data-page-node-id="ZXc4NRqSQnfJhKHJEm8g3J">U</u></button>
+              <button class="tb" title="删除线" onmousedown="event.preventDefault()" onclick="richExec('strikeThrough')" data-page-node-id="wMfwMbYuwmnxlcWWCjOjOM"><s data-page-node-id="MH1agdOfJhZJs6rtyK2y1W">S</s></button>
+              <input type="color" title="字体颜色" value="#3D2914" onchange="richExec('foreColor',this.value)" data-page-node-id="JCI37BS6fbAGetOky98F1O">
             </div>
-            <div class="tb-group" data-page-node-id="DRmwwlqsC5PRjgk6sAzNaP">
-              <span class="tb-gl" data-page-node-id="N6QKGEXIELsp67z00VtdZH">排版</span>
-              <button class="tb primary" title="一键排版：选择风格整体美化" onmousedown="event.preventDefault()" onclick="openFormatPresets()" data-page-node-id="sOMu2uZjGAVnkja3Bs9mEq">一键排版</button>
+            <div class="tb-group" data-page-node-id="fG02cr6AOrGY1WMqCvmIL5">
+              <span class="tb-gl" data-page-node-id="wA3Vi56bJ1hyEy6x07Zz6y">排版</span>
+              <button class="tb primary" title="一键排版：选择风格整体美化" onmousedown="event.preventDefault()" onclick="openFormatPresets()" data-page-node-id="5jPbntOZuMyT0HaqDo1Ifx">一键排版</button>
             </div>
           </div>
-          <div class="tb-row" data-page-node-id="lJLxeRjEPrrVFA9M411urk">
-            <div class="tb-group" data-page-node-id="a4gUTznrkYjTh6CjZBVFnN">
-              <span class="tb-gl" data-page-node-id="WGaAW9ZB7MJOLgrOdZBH9O">对齐</span>
-              <button class="tb" title="左对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyLeft')" data-page-node-id="UAknl7BU41EyzzoMS0klIJ">左</button>
-              <button class="tb" title="居中" onmousedown="event.preventDefault()" onclick="richExec('justifyCenter')" data-page-node-id="bAYxCDRxyB0KUHKAxqDGdq">中</button>
-              <button class="tb" title="右对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyRight')" data-page-node-id="LTqzhofRfSVEdVnIlW9WN9">右</button>
-              <button class="tb" title="两端对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyFull')" data-page-node-id="Sd1BEGNfysHlUlSz6HGDqW">两端</button>
+          <div class="tb-row" data-page-node-id="ydJpZ3cCWmT6sQN0yaRGOi">
+            <div class="tb-group" data-page-node-id="z2lHxz3nP1EgNeHACsXttH">
+              <span class="tb-gl" data-page-node-id="0b7mCPvvjVDfHqXaqsEMd3">对齐</span>
+              <button class="tb" title="左对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyLeft')" data-page-node-id="BeYbJYBJNJBW9FCLhJCe0X">左</button>
+              <button class="tb" title="居中" onmousedown="event.preventDefault()" onclick="richExec('justifyCenter')" data-page-node-id="EXLzOHn8UD4c2D1j4DXXwc">中</button>
+              <button class="tb" title="右对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyRight')" data-page-node-id="XL8kFSINKxKMHo8YsnwMnq">右</button>
+              <button class="tb" title="两端对齐" onmousedown="event.preventDefault()" onclick="richExec('justifyFull')" data-page-node-id="MVA02AB6rPgCJeOIdjwhFW">两端</button>
             </div>
-            <div class="tb-group" data-page-node-id="6JvkS6x7nBxJWYCGqM2lQb">
-              <span class="tb-gl" data-page-node-id="sVmyGb7ktc4mXrKp1vtGF6">段落排版</span>
-              <button class="tb" title="减少缩进" onmousedown="event.preventDefault()" onclick="richExec('outdent')" data-page-node-id="rVesTWAydCncMpO3uzvoOD">减缩</button>
-              <button class="tb" title="增加缩进" onmousedown="event.preventDefault()" onclick="richExec('indent')" data-page-node-id="Bb4HPg2qdKHrowZ55C6qKC">加缩</button>
-              <select title="字间距" onchange="applyBlockStyle('letterSpacing',this.value);this.value=''" data-page-node-id="Di8NDT9p4bPm6jUmNehOVE">
-                <option value="" data-page-node-id="2XFr1VZa1sszyjOBGxG8VD">字间距</option>
-                <option value="0px" data-page-node-id="fXkLcqtgF4TP6HABrfJ0Tv">正常</option>
-                <option value="1px" data-page-node-id="pYWUeNw8YhS0gPuSvMNvAx">+1</option>
-                <option value="2px" data-page-node-id="VdO0MylOWykHtDwM7lqxb4">+2</option>
-                <option value="3px" data-page-node-id="t5mstzBwfBPfBjO7NEToCL">+3</option>
+            <div class="tb-group" data-page-node-id="vOOS6nZ8Wz80kSj54x1Bou">
+              <span class="tb-gl" data-page-node-id="st9PLzZc0h1lTIjDVHuhPs">段落排版</span>
+              <button class="tb" title="减少缩进" onmousedown="event.preventDefault()" onclick="richExec('outdent')" data-page-node-id="Hdo7UpieVwCwRuGnViUjfC">减缩</button>
+              <button class="tb" title="增加缩进" onmousedown="event.preventDefault()" onclick="richExec('indent')" data-page-node-id="u7EhkPte2FWboQXrDtbxLN">加缩</button>
+              <select title="字间距" onchange="applyBlockStyle('letterSpacing',this.value);this.value=''" data-page-node-id="bizUlUaBhTcHx5ubc81QF0">
+                <option value="" data-page-node-id="MtwdzCapJoWMay802AFyIN">字间距</option>
+                <option value="0px" data-page-node-id="oWSwLS9PBwQREQoEDPqHt1">正常</option>
+                <option value="1px" data-page-node-id="FxJNl5BWYLpvnjv5C3fFbP">+1</option>
+                <option value="2px" data-page-node-id="1SkAXAG9bDn2QPnyiiPJ6H">+2</option>
+                <option value="3px" data-page-node-id="Ex2D62tKiDYfsRszw9GAxQ">+3</option>
               </select>
             </div>
-            <div class="tb-group" data-page-node-id="ob4P3JaEmiBGTXipsFfhfQ">
-              <span class="tb-gl" data-page-node-id="cbEwDMfMojc2HEpEZTKxUW">列表</span>
-              <button class="tb" title="无序列表" onmousedown="event.preventDefault()" onclick="richExec('insertUnorderedList')" data-page-node-id="U4XqLogwbeiIJCPPLlYmJm">•列表</button>
-              <button class="tb" title="序号列表" onmousedown="event.preventDefault()" onclick="richExec('insertOrderedList')" data-page-node-id="rHHzM6PfXxYPYtpMF1GY28">1.列表</button>
-              <button class="tb" title="分隔符" onmousedown="event.preventDefault()" onclick="richExec('insertHorizontalRule')" data-page-node-id="hkmYOQvIyCScXzER0g11lH">分隔</button>
-              <button class="tb" id="btnPlainPaste" title="当前：带格式粘贴（点此切换纯文本）" onclick="togglePlainPaste()" data-page-node-id="kGQSTbsL9tC2O0fJP8XmWq">粘贴</button>
+            <div class="tb-group" data-page-node-id="jpWhhLIAOG8uigv63Fsa7i">
+              <span class="tb-gl" data-page-node-id="2vXjinp1awMYdDwUnwHA9m">列表</span>
+              <button class="tb" title="无序列表" onmousedown="event.preventDefault()" onclick="richExec('insertUnorderedList')" data-page-node-id="qCPhiKehhuWdDFFeDbsvPB">•列表</button>
+              <button class="tb" title="序号列表" onmousedown="event.preventDefault()" onclick="richExec('insertOrderedList')" data-page-node-id="xjqZ5Aao7ZuioeKUEAJvHG">1.列表</button>
+              <button class="tb" title="分隔符" onmousedown="event.preventDefault()" onclick="richExec('insertHorizontalRule')" data-page-node-id="VW1Ylee861HMBny6iqqQor">分隔</button>
+              <button class="tb" id="btnPlainPaste" title="当前：带格式粘贴（点此切换纯文本）" onclick="togglePlainPaste()" data-page-node-id="bEsiVutDBhiClUGX9sc18Y">粘贴</button>
             </div>
-          </div>
-        </div>
-        <div id="emojiPop" class="emoji-pop hidden" data-page-node-id="JDP9JeaeaqkRKq4nasvVa3"></div>
-        <div id="edBody" class="ed-rich" contenteditable="true" data-ph="在左侧写作，右侧实时预览排版效果；支持加粗、标题、列表、引用、颜色、对齐，也可带格式粘贴。" oninput="editorInput()" onpaste="onRichPaste(event)" onkeyup="saveRange()" onmouseup="saveRange();edMouseUp()" data-page-node-id="VoYc9B3Um7rIUPOYIvCQbj"></div>
-        <div id="fmtModal" class="fmt-modal hidden" onclick="if(event.target===this)closeFormatPresets()" data-page-node-id="jqIA0y6QCTupMlNfRafpQn">
-          <div class="fmt-box" data-page-node-id="2BvIcC5dZgUEf67xDeFvZO">
-            <div class="fmt-head" data-page-node-id="TOYh3EWAxFMQQnyJHVwJ2U"><span data-page-node-id="7hIPMfvH7nvHj016V9BIjR">一键排版 · 选择风格</span><button class="fmt-x" onclick="closeFormatPresets()" data-page-node-id="KbrhPHYSL5pLdYBKsJuptJ">×</button></div>
-            <p class="fmt-tip" data-page-node-id="VHV0xET5E6lCyLPvWztdJI">一键套用统一排版：标题、正文、引用、列表、图片整体美化，<b data-page-node-id="nA6sMsk8c8GW48OQEGMsRU">不改你的文字内容</b>。选错可随时再点重排。</p>
-            <div class="fmt-grid" id="fmtGrid" data-page-node-id="4ZtPlhjD4vZM8aMeU5rPzQ"></div>
           </div>
         </div>
-        <div class="editor-foot" data-page-node-id="53Ydn81eqjfVqsmaZvQB4T"><b id="edWords" data-page-node-id="32jj1bgpcFw1ceRDUYP0Ks">0 字</b><span data-page-node-id="cB4g8uDeyyEHoPRPzxxP6m">输入停顿后自动保存 · 返回前请确认已保存 · 支持带格式粘贴</span></div>
+        <div id="emojiPop" class="emoji-pop hidden" data-page-node-id="dFPkShgFrNQr8sZ3Yp1g78"></div>
+        <div id="edBody" class="ed-rich" contenteditable="true" data-ph="在左侧写作，右侧实时预览排版效果；支持加粗、标题、列表、引用、颜色、对齐，也可带格式粘贴。" oninput="editorInput()" onpaste="onRichPaste(event)" onkeyup="saveRange()" onmouseup="saveRange();edMouseUp()" data-page-node-id="Xp5yc2RaedyHI6stfF0IG3"></div>
+        <div id="fmtModal" class="fmt-modal hidden" onclick="if(event.target===this)closeFormatPresets()" data-page-node-id="1bcCOR3ZFILDdw2tBTWP0q">
+          <div class="fmt-box" data-page-node-id="csfMBaSPGB9NDAKSkDfh0L">
+            <div class="fmt-head" data-page-node-id="yVkiDJ3Gvca4gx8zc01a7C"><span data-page-node-id="jGTIcOKva0SsfMbXjcUII3">一键排版 · 选择风格</span><button class="fmt-x" onclick="closeFormatPresets()" data-page-node-id="uXyWyOIDZaQsDMmTOb4KAR">×</button></div>
+            <p class="fmt-tip" data-page-node-id="3CaQ2mWVOsF4RdDXXGdQIZ">一键套用统一排版：标题、正文、引用、列表、图片整体美化，<b data-page-node-id="NlPDAPsfFJ3wRzUxLvCv7w">不改你的文字内容</b>。选错可随时再点重排。</p>
+            <div class="fmt-grid" id="fmtGrid" data-page-node-id="jcgpO1C0bW0SVW5Epk1cq8"></div>
+          </div>
+        </div>
+        <div class="editor-foot" data-page-node-id="d0S2YY8SJTBgiiZDoRGB0T"><b id="edWords" data-page-node-id="DGyJv2QTtWIHNnmLQdkPTc">0 字</b><span data-page-node-id="BVhE7XRzHf9XQX5dW8lf0r">输入停顿后自动保存 · 返回前请确认已保存 · 支持带格式粘贴</span></div>
       </div>
     </div>
-    <div class="editor-col editor-col-right" data-page-node-id="K83p49DiCFYOa35pdEy2Ty">
-      <div class="pv-label" style="display:flex;align-items:center;justify-content:space-between" data-page-node-id="CuOmOz7N4eAGaIMOL0itSj"><span data-page-node-id="Eudl1C1hJAGkjrshDMDCKi">排版预览 · 模拟发布效果</span></div>
-      <div class="chips" id="pvThemes" style="margin:0 0 14px" data-page-node-id="YD8nZfwlSHbsM3DBf3HN1F"></div>
-      <div class="pv-card" id="edPreview" data-page-node-id="eQFwKCVdDyC0FFWJfMYcU3"></div>
+    <div class="editor-col editor-col-right" data-page-node-id="qCTd8Gk6wED7lVtHXe4GKB">
+      <div class="pv-label" style="display:flex;align-items:center;justify-content:space-between" data-page-node-id="1BCCEVsHR6543Bihqfah1i"><span data-page-node-id="BdDBCybplyGsaLokMZhrpl">排版预览 · 模拟发布效果</span></div>
+      <div class="chips" id="pvThemes" style="margin:0 0 14px" data-page-node-id="WcL3LZq7eOREb35ceIAnFg"></div>
+      <div class="pv-card" id="edPreview" data-page-node-id="kUZ03TALkmXdC4OO4VaFMp"></div>
     </div>
   </div>
 </div>
 
-<div id="modalRoot" data-page-node-id="acGibKCTC8n36pEZHv8JGl"></div>
-<div id="toasts" data-page-node-id="CrlK7SCQhhTDiY4F50jgs4"></div>
+<div id="modalRoot" data-page-node-id="w4tngw6C3XYXxbHxou8Q0Q"></div>
+<div id="toasts" data-page-node-id="77OTSxrwi7FMiGQ57j5kdD"></div>
 
 <script>
 var DB_TOPICS='aLTCALpkBjd6Q9WgnCM0yq';
@@ -923,11 +938,12 @@ var OPT={
   mat:{eyebrow:'LIBRARY',title:'素材库',hint:'看到好笔记就存进来，写选题时随时翻出来。'},
   cal:{eyebrow:'SCHEDULE',title:'发布日历',hint:'把选题安排到具体日期，月视图一眼看完。'},
   rev:{eyebrow:'REVIEW',title:'笔记复盘',hint:'发布后回来记一笔，经验会越攒越多。'},
-  todo:{eyebrow:'TO-DO',title:'今日待办',hint:'从选题池选一个任务安排进今天，做完勾选自动移入已办。'}
+  todo:{eyebrow:'TO-DO',title:'今日待办',hint:'从选题池选一个任务安排进今天，做完勾选自动移入已办。'},
+  basket:{eyebrow:'ARCHIVE',title:'收纳筐',hint:'从选题池、素材库、待办收进来的东西都在这，不占用主视图，随时可以翻回去。'}
 };
 var PF_CLS={'小红书':'pf-xhs','公众号':'pf-gzh','抖音':'pf-dy','微博':'pf-wb','B站':'pf-bili','知乎':'pf-zh'};
-var store={topics:[],materials:[],inspirations:[],reviews:[],todo:[]};
-var ui={tab:'dash',calYear:null,calMonth:null,range:'近7天',inspSearch:'',inspTag:'',batch:false,batchSel:{},topicFilter:'all',matFilter:'all',tool:1,account:'',editId:null,editTheme:0};
+var store={topics:[],materials:[],inspirations:[],reviews:[],todo:[],basket:[]};
+var ui={tab:'dash',calYear:null,calMonth:null,range:'近7天',inspSearch:'',inspTag:'',batch:false,batchSel:{},topicFilter:'all',matFilter:'all',tool:1,account:'',editId:null,editTheme:0,bkFilter:'all',bkW:''};
 var ACC_NAME_MAP={}; // 公开部署版已脱敏：移除真实账号昵称映射
 var ACC_PF_DEF={'公众号1':'gzh','公众号2':'gzh','小红书1':'xhs','小红书2':'xhs','小红书3':'xhs'};
 function loadAccPf(){try{var r=localStorage.getItem(LS_PREFIX+'accpf');if(r)return JSON.parse(r)}catch(e){}return {}}
@@ -1089,7 +1105,7 @@ function dedupOnce(){
     if(cleared)toast('已清理 '+cleared+' 条历史重复数据',true);
   }catch(e){console.error(e)}
 }
-function loadCache(){try{var raw=localStorage.getItem(LS_PREFIX+'cache');if(raw){var c=JSON.parse(raw);if(c&&c.topics)store=c}}catch(e){}}
+function loadCache(){try{var raw=localStorage.getItem(LS_PREFIX+'cache');if(raw){var c=JSON.parse(raw);if(c&&c.topics)store=c}}catch(e){}if(!Array.isArray(store.basket))store.basket=[]}
 function saveCache(){try{localStorage.setItem(LS_PREFIX+'cache',JSON.stringify(store))}catch(e){}}
 function normRow(r){var o={_id:r._id||r.id||uid()};for(var k in r){if(k==='_id'||k==='id')continue;o[k]=r[k]}return o}
 function flatProps(props){
@@ -1432,7 +1448,7 @@ function todoCardPending(it){
       '<span class="todo-check" onclick="todoDone(\''+(it.td.id||it.td._id)+'\')" title="勾选完成"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>'+
       title+tag+'</div>'+
     '<div class="tc-meta" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'+meta+'</div>'+
-    '<div class="tc-actions"><button class="btn btn-ghost btn-sm" onclick="todoRemove(\''+(it.td.id||it.td._id)+'\');renderTodoList()">删除</button></div></div>';
+    '<div class="tc-actions"><button class="btn btn-line btn-sm" onclick="storeTodo(\''+(it.td.id||it.td._id)+'\')">收纳</button><button class="btn btn-ghost btn-sm" onclick="todoRemove(\''+(it.td.id||it.td._id)+'\');renderTodoList()">删除</button></div></div>';
 }
 function todoCardDone(it){
   var title='<span class="tc-title" style="text-decoration:line-through;color:var(--sub)">'+esc(todoTitleText(it))+'</span>';
@@ -1499,6 +1515,7 @@ function saveOtherTodo(){
   else if(ui.tab==='cal'){main.innerHTML=viewCal();bindCal()}
   else if(ui.tab==='rev')main.innerHTML=viewRev();
   else if(ui.tab==='todo')main.innerHTML=viewTodo();
+  else if(ui.tab==='basket')main.innerHTML=viewBasket();
   afterRender();
 }
 function viewDash(){
@@ -1595,6 +1612,7 @@ function viewInsp(){
   if(ui.tab==='mat')renderMatList();
   if(ui.tab==='rev')renderRevList();
   if(ui.tab==='todo')renderTodoList();
+  if(ui.tab==='basket')renderBasket();
 }
 function renderInspTags(){
   var box=document.getElementById('inspTagChips');if(!box)return;
@@ -1859,7 +1877,7 @@ function topicCard(tp){
       '<button class="btn btn-ghost btn-sm" onclick="openEditor(\''+tp._id+'\')">编辑</button>'+
       '<button class="btn btn-ghost btn-sm" onclick="viewTopicMats(\''+tp._id+'\')">素材('+matCount+')</button>'+
       (isPub?'':(tp['排期日期']?'<button class="btn btn-line btn-sm" onclick="clearDue(\''+tp._id+'\')">取消排期</button>':'<button class="btn btn-line btn-sm" onclick="scheduleTopic(\''+tp._id+'\')">安排发布</button>'))+
-      '<button class="btn btn-ghost btn-sm" onclick="addTodo(\''+tp._id+'\')">加今日待办</button>'+
+      '<button class="btn btn-ghost btn-sm" onclick="addTodo(\''+tp._id+'\')">加今日待办</button>'+'<button class="btn btn-line btn-sm" onclick="storeTopic(\''+tp._id+'\')" title="移出选题池，存进收纳筐">收纳</button>'+
     '</div></div>';
 }
 function setStage(id,stage){dbUpd('topics',id,{'阶段':{select:OPT.stage[sStore(stage)]}})}
@@ -2310,7 +2328,7 @@ function matCard(m,mini){
     (m['要点']?'<div class="mat-points" style="cursor:pointer" onclick="event.stopPropagation();editMatModal(\''+m._id+'\')" title="点击编辑"><span class="lbl">AI 摘要</span>'+esc(m['要点'])+'</div>':'')+
     (learn?'<div class="mat-learn" style="cursor:pointer" onclick="event.stopPropagation();editMatModal(\''+m._id+'\')" title="点击编辑"><span class="lbl">值得学的点</span>'+esc(learn)+'</div>':'')+
     '<div class="mat-foot">'+
-      '<button class="btn btn-line btn-sm" onclick="event.stopPropagation();relTopicModal(\''+m._id+'\')">'+(rel?'换关联':'关联选题')+'</button>'+
+      '<button class="btn btn-line btn-sm" onclick="event.stopPropagation();relTopicModal(\''+m._id+'\')">'+(rel?'换关联':'关联选题')+'</button>'+'<button class="btn btn-line btn-sm" onclick="event.stopPropagation();storeMat(\''+m._id+'\')" title="移出素材库，存进收纳筐">收纳</button>'+
       (rel?'<span class="rel-chip">'+esc(rel)+'</span>':'<span></span>')+
       '<span>'+fmtDate(m['创建时间'])+'</span>'+
     '</div></div>';
@@ -2751,8 +2769,142 @@ function genTitles(topic){
   }).sort(function(a,b){return b.score-a.score});
 }
 
+/* ===== 收纳筐：本地存储，预留云端升级 ===== */
+/* 存储层已隔离在 basketAll/basketAdd/basketRemove 三个函数里。
+   日后在 WorkBuddy 页面新建「收纳筐」数据表后，把它的 databaseId 填到 BASKET_DB_ID，
+   即可把这三个函数改为读写云端，实现多设备同步（数据可一并迁移）。 */
+var BASKET_DB_ID='';
+var BK_SRC={topic:'来自选题',mat:'来自素材',todo:'来自待办'};
+function basketAll(){if(!Array.isArray(store.basket))store.basket=[];return store.basket}
+function bkToProps(s){
+  var p={};
+  for(var k in s){
+    var v=s[k];
+    if(v==null||v==='')continue;
+    if(k==='类型'){p[k]={select:(v==='视频')?'tp_vid':'tp_img'};continue}
+    if(k==='阶段'){p[k]={select:OPT.stage[sStore(v)]||v};continue}
+    if(k==='状态'){p[k]={select:OPT.inspSt[v]||v};continue}
+    if(k==='完成'){p[k]={checkbox:!!v};continue}
+    if(k==='评分'){p[k]={number:Number(v)||0};continue}
+    if(k==='分类'){p[k]={multi_select:Array.isArray(v)?v:[v]};continue}
+    if(k==='来源链接'){p[k]={url:{text:(v&&v.text)||'查看原文',link:(v&&v.link)||''}};continue}
+    if(/时间|日期/.test(k)){p[k]={date:fmtDate(v)||String(v)};continue}
+    if(typeof v==='object'){p[k]=toProp(k,v);continue}
+    p[k]={text:String(v)};
+  }
+  return p;
+}
+function basketAdd(src,row,title,summary){
+  var snap={};
+  for(var k in row){if(k==='_id'||k==='id')continue;snap[k]=row[k]}
+  basketAll().unshift({_id:uid(),src:src,title:title||'未命名',summary:summary||'',acc:row['账号']||'',note:'',savedAt:todayStr(),snap:snap});
+  saveCache();
+}
+function storeTopic(id){
+  var tp=store.topics.find(function(x){return x._id===id});if(!tp)return;
+  if(!confirm('把「'+tp['标题']+'」放进收纳筐？\n它会从选题池移出，之后随时可以翻回来。'))return;
+  basketAdd('topic',tp,tp['标题'],tp['备注']||'');
+  dbDel('topics',id);toast('已放进收纳筐');
+}
+function storeMat(id){
+  var m=store.materials.find(function(x){return x._id===id});if(!m)return;
+  if(!confirm('把「'+m['标题']+'」放进收纳筐？\n它会从素材库移出、不再占近期空间，之后随时可以翻回来。'))return;
+  basketAdd('mat',m,m['标题'],m['要点']||m['值得学的点']||'');
+  dbDel('materials',id);toast('已放进收纳筐');
+}
+function storeTodo(id){
+  var td=(store.todo||[]).find(function(x){return String(x.id||x._id)===String(id)});if(!td)return;
+  var tp=store.topics.find(function(x){return x._id===td.topicId});
+  var title=tp?tp['标题']:(td['选题标题']||'未命名事项');
+  if(!confirm('把「'+title+'」放进收纳筐？\n它会从今日待办移出。'))return;
+  basketAdd('todo',td,title,(tp&&tp['备注'])||'');
+  dbDel('todo',id);toast('已放进收纳筐');
+}
+function basketRemove(id){store.basket=basketAll().filter(function(x){return x._id!==id});saveCache()}
+function basketDel(id){
+  var r=basketAll().find(function(x){return x._id===id});if(!r)return;
+  if(!confirm('彻底删除「'+r.title+'」？删除后无法还原。'))return;
+  basketRemove(id);renderTab();toast('已删除');
+}
+function basketRestore(id){
+  var r=basketAll().find(function(x){return x._id===id});if(!r)return;
+  var to=r.src==='topic'?'选题池':(r.src==='mat'?'素材库':'今日待办');
+  if(!confirm('把「'+r.title+'」还原回'+to+'？'))return;
+  var table=r.src==='topic'?'topics':(r.src==='mat'?'materials':'todo');
+  dbAdd(table,bkToProps(r.snap));
+  basketRemove(id);renderTab();toast('已还原回'+to);
+}
+function basketNote(id){
+  var r=basketAll().find(function(x){return x._id===id});if(!r)return;
+  openModal('<h3>写点想法<button class="close-x" onclick="closeModal()"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button></h3>'+
+    '<label class="f-label">「'+esc(r.title)+'」</label>'+
+    '<textarea id="bkNote" rows="4" placeholder="当时为什么收起来？以后想怎么用它？">'+esc(r.note||'')+'</textarea>'+
+    '<div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal()">取消</button><button class="btn btn-pri" onclick="saveBkNote(\''+id+'\')">保存</button></div>');
+}
+function saveBkNote(id){
+  var r=basketAll().find(function(x){return x._id===id});if(!r)return;
+  var el=document.getElementById('bkNote');r.note=el?el.value.trim():'';
+  saveCache();closeModal();renderTab();toast('想法已保存');
+}
+function basketNewTopic(id){
+  var r=basketAll().find(function(x){return x._id===id});if(!r)return;
+  addTopicModal();
+  var t=document.getElementById('mTitle');if(t)t.value=r.title||'';
+  var n=document.getElementById('mNote');
+  if(n)n.value=(r.summary||'')+(r.note?((r.summary?'\n':'')+'【收纳时的想法】'+r.note):'');
+}
+function bkFilter(el,f){
+  ui.bkFilter=f;
+  document.querySelectorAll('#bkChips .chip').forEach(function(c){c.classList.remove('on')});
+  el.classList.add('on');renderBasket();
+}
+function bkSearchInput(v){ui.bkW=v;renderBasket()}
+function viewBasket(){
+  var rows=basketAll();
+  var cnt={topic:0,mat:0,todo:0};
+  rows.forEach(function(r){if(cnt[r.src]!==undefined)cnt[r.src]++});
+  var defs=[['all','全部',rows.length],['topic','来自选题',cnt.topic],['mat','来自素材',cnt.mat],['todo','来自待办',cnt.todo]];
+  var chips=defs.map(function(d){return '<button class="chip'+(ui.bkFilter===d[0]?' on':'')+'" onclick="bkFilter(this,\''+d[0]+'\')">'+d[1]+' '+d[2]+'</button>'}).join('');
+  return '<div class="toolbar-bar"><input class="grow" id="bkSearch" placeholder="搜索收纳筐里的标题、摘要、想法" value="'+esc(ui.bkW||'')+'" oninput="bkSearchInput(this.value)"></div>'+
+    '<div class="chips" id="bkChips">'+chips+'</div>'+
+    '<div id="bkList"></div>';
+}
+function bkCard(r){
+  var s=r.src||'topic';
+  var meta=['<span class="bk-src bk-src-'+s+'">'+(BK_SRC[s]||'来源')+'</span>'];
+  if(s==='topic'&&r.snap&&r.snap['类型'])meta.push('<span class="bk-mini">'+(r.snap['类型']==='视频'?'视频':'图文')+'</span>');
+  if(s==='mat'&&r.snap&&r.snap['分类']&&r.snap['分类'].length)meta.push('<span class="bk-mini">'+esc(r.snap['分类'].join(' · '))+'</span>');
+  if(s==='todo'&&r.snap&&r.snap['阶段'])meta.push('<span class="bk-mini">'+esc(sShow(r.snap['阶段']))+'</span>');
+  meta.push('<span class="bk-date">收于 '+fmtDate(r.savedAt)+'</span>');
+  var alt=s==='mat'?'用它开选题':(s==='topic'?'再开一个':'');
+  return '<div class="bk-card">'+
+    '<div class="bk-top">'+meta.join('')+'</div>'+
+    '<div class="bk-title">'+accBadge(r.acc)+'<span>'+esc(r.title)+'</span></div>'+
+    (r.summary?'<div class="bk-sum">'+esc(r.summary)+'</div>':'')+
+    (r.note?'<div class="bk-note">'+esc(r.note)+'</div>':'')+
+    '<div class="bk-acts">'+
+      '<button class="btn btn-pri btn-sm" onclick="basketRestore(\''+r._id+'\')">还原</button>'+
+      (alt?'<button class="btn btn-line btn-sm" onclick="basketNewTopic(\''+r._id+'\')">'+alt+'</button>':'')+
+      '<button class="btn btn-ghost btn-sm" onclick="basketNote(\''+r._id+'\')">'+(r.note?'改想法':'写想法')+'</button>'+
+      '<button class="btn btn-ghost btn-sm" onclick="basketDel(\''+r._id+'\')">删除</button>'+
+    '</div></div>';
+}
+function renderBasket(){
+  var box=document.getElementById('bkList');if(!box)return;
+  var kw=(ui.bkW||'').trim().toLowerCase();
+  var rows=basketAll().filter(function(r){
+    if(ui.bkFilter!=='all'&&r.src!==ui.bkFilter)return false;
+    if(kw){
+      var hay=(String(r.title||'')+String(r.summary||'')+String(r.note||'')).toLowerCase();
+      if(hay.indexOf(kw)<0)return false;
+    }
+    return true;
+  });
+  if(!rows.length){box.innerHTML='<div class="empty"><div>收纳筐是空的。在选题池、素材库或待办里点「收纳」，把暂时用不上、又舍不得删的东西收进来。</div></div>';return}
+  box.innerHTML='<div class="bk-grid">'+rows.map(bkCard).join('')+'</div>';
+}
 function exportJSON(){
-  var data={exportedAt:new Date().toISOString(),topics:store.topics,materials:store.materials,inspirations:store.inspirations,reviews:store.reviews};
+  var data={exportedAt:new Date().toISOString(),topics:store.topics,materials:store.materials,inspirations:store.inspirations,reviews:store.reviews,todo:store.todo,basket:store.basket};
   var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
   var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='自媒体工作台备份-'+todayStr()+'.json';
   document.body.appendChild(a);a.click();a.remove();
@@ -2768,6 +2920,8 @@ function importJSON(input){
       if(d.materials&&d.materials.length){d.materials.forEach(function(r){var p={};for(var k in r){if(k==='_id'||k==='id')continue;p[k]=toProp(k,r[k])}dbAdd('materials',p);n++})}
       if(d.inspirations&&d.inspirations.length){d.inspirations.forEach(function(r){var p={};for(var k in r){if(k==='_id'||k==='id')continue;p[k]=toProp(k,r[k])}dbAdd('inspirations',p);n++})}
       if(d.reviews&&d.reviews.length){d.reviews.forEach(function(r){var p={};for(var k in r){if(k==='_id'||k==='id')continue;p[k]=toProp(k,r[k])}dbAdd('reviews',p);n++})}
+      if(d.todo&&d.todo.length){d.todo.forEach(function(r){var p={};for(var k in r){if(k==='_id'||k==='id')continue;p[k]=toProp(k,r[k])}dbAdd('todo',p);n++})}
+      if(d.basket&&d.basket.length){store.basket=(store.basket||[]).concat(d.basket);saveCache();n+=d.basket.length}
       toast('导入 '+n+' 条数据');
     }catch(err){toast('备份文件解析失败',true)}
     input.value='';
